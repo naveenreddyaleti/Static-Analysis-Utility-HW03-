@@ -6,39 +6,39 @@ Developed a Python Program that will extract some useful data from the artifact(
 
 The Python code collects the following data from the sample (depending on the file type being analyzed), puts it into a global object within the script, and finally commits it into the database (mongo dB):
 
-1.	For PE files, I have extracted the following metadata:
-      a.	File type (as reported by exiftool / “file magic”)
-      b.	File size (in bytes)
-      c.	File names
-      d.	Compile Time
-      e.	Creation Time
-      f.	Modify Time
-      g.	Author
-      h.	Company Name
-      i.	File Description
-      j.	List of sections (if it is a PE32-type file)
-      k.	Sections
-      l.	Sections size in order
-      m.	Sections address in order
-      n.	MD5, SHA-1, SHA-256 hashes
-2.	For html file, I have extracted the following meta data:
-      a. External JavaScript links
-      b. External CSS links
-      c. JavaScript function names
-      d. SHA1
-      e. SHA256
-      f. md5
-      g. size
-      h. File names
-3.	For pdf file, I have extracted the following metadata:
-      a. Encodings used in pdf
-      b. URI’s in pdf
-      c. Filters in pdf
-      d. SHA256
-      e. SHA1
-      f. md5
-      g. size
-      h. File names
+a.For PE files, I have extracted the following metadata:
+      1.File type (as reported by exiftool / “file magic”)
+      2.File size (in bytes)
+      3.File names
+      4.Compile Time
+      5.Creation Time
+      6.Modify Time
+      7.Author
+      8.Company Name
+      9.File Description
+      10.List of sections (if it is a PE32-type file)
+      11.Sections
+      12.Sections size in order
+      13.Sections address in order
+      14.MD5, SHA-1, SHA-256 hashes
+b.For html file, I have extracted the following meta data:
+      1.External JavaScript links
+      2.External CSS links
+      3.JavaScript function names
+      4.SHA1
+      5.SHA256
+      6.md5
+      7.size
+      8.File names
+c.For pdf file, I have extracted the following metadata:
+      1.Encodings used in pdf
+      2.URI’s in pdf
+      3.Filters in pdf
+      4.SHA256
+      5.SHA1
+      6.md5
+      7.size
+      8.File names
 
 Run a few summary analyses using PyMongo in a Python script to demonstrate the data was imported. Identified information or characteristics that are available in multiple malware samples.
 
@@ -47,7 +47,8 @@ Documented a report which includes malware analysis of two or more malware sampl
 Listed the md5, sha-1, or sha-256 of all the malware samples that are identified by my custom analysis and yielded some amount of data extraction for it.
 
 Used mongo dump to dump the contents of the collection into a BSON output file. 
- #Submission includes:
+
+#Submission includes:
  
 1.	PDF Report.
 
